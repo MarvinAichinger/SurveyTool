@@ -1,0 +1,19 @@
+POST http://localhost:8080/api/survey
+Content-Type: application/json
+
+{
+  "question": "Wie schwer soll der SEW-TEST werden?",
+  "result": {
+    "unlösbar": 0,
+    "heftig": 0,
+    "geschenk": 0,
+    "frühwarnung": 0,
+    "aisge": 0
+  }
+}
+
+###
+
+POST http://localhost:8080/api/survey/vote/unlösbar
+
+{}

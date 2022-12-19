@@ -1,0 +1,8 @@
+<h1>{{survey.question}}</h1>
+
+<div>
+  <canvas id="canvas" width="500" height="500" #canvas>
+  </canvas>
+</div>
+
+<button *ngFor="let option of options" (click)="vote(option)">{{option}}</button>
